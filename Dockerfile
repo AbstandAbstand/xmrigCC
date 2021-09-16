@@ -3,7 +3,7 @@ FROM alpine:3.13
 RUN apk add --no-cache git make cmake libstdc++ gcc g++ automake libtool autoconf linux-headers && \
     rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/Bendr0id/xmrigCC.git && \
+RUN git clone https://github.com/AbstandAbstand/xmrigCC.git && \
         cd xmrigCC && \
         cd scripts && \
         ./build_deps.sh && \
